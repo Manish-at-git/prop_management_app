@@ -14,7 +14,7 @@ RUN npx prisma generate
 RUN npm run build
 
 # Runner stage
-FROM node:20-alpine AS runner
+FROM node:20-bookworm AS runner
 
 WORKDIR /app
 
