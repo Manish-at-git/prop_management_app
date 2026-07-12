@@ -43,9 +43,9 @@ import { RolesGuard } from './auth/guards/roles.guard';
     AccessCodesModule,
     CodeRequestsModule,
     CorrectionRequestsModule,
-    DocumentsModule,
-    MaintenanceModule,
-    NotificationsModule,
+    // DocumentsModule,
+    // MaintenanceModule,
+    // NotificationsModule,
   ],
   providers: [
     // Apply JwtAuthGuard globally; routes can opt-out with @Public()
@@ -60,4 +60,4 @@ import { RolesGuard } from './auth/guards/roles.guard';
     },
   ],
 })
-export class AppModule {}
+export class AppModule { }

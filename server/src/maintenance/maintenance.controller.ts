@@ -4,13 +4,15 @@ import { MaintenanceService } from './maintenance.service';
 import { CreateMaintenanceDto } from './dto/create-maintenance.dto';
 import { UpdateMaintenanceDto } from './dto/update-maintenance.dto';
 import { MaintenancePriority, MaintenanceStatus } from '@prisma/client';
+import { Public } from 'src/auth/decorators/public.decorator';
 
 @ApiTags('Maintenance Requests')
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('maintenance')
 export class MaintenanceController {
-  constructor(private readonly maintenanceService: MaintenanceService) {}
+  constructor(private readonly maintenanceService: MaintenanceService) { }
 
+  @Public()
   @Post()
   @HttpCode(HttpStatus.CREATED)
   @ApiOperation({ summary: 'Submit a maintenance request (Any authenticated user)' })
@@ -19,6 +21,7 @@ export class MaintenanceController {
     return this.maintenanceService.create(req.user.id, createMaintenanceDto);
   }
 
+  @Public()
   @Get()
   @ApiOperation({ summary: 'List maintenance requests' })
   @ApiResponse({ status: 200, description: 'Return list of maintenance requests' })
@@ -30,6 +33,7 @@ export class MaintenanceController {
     return this.maintenanceService.findAll(req.user, status, priority);
   }
 
+  @Public()
   @Get(':id')
   @ApiOperation({ summary: 'Get maintenance request details by ID' })
   @ApiResponse({ status: 200, description: 'Return maintenance request details' })
@@ -39,6 +43,7 @@ export class MaintenanceController {
     return this.maintenanceService.findOne(id, req.user);
   }
 
+  @Public()
   @Patch(':id')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'Update maintenance request (Admin/Manager can change status/priority; Resident can edit details)' })

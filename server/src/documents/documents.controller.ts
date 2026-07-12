@@ -4,13 +4,15 @@ import { DocumentsService } from './documents.service';
 import { CreateDocumentDto } from './dto/create-document.dto';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
+import { Public } from 'src/auth/decorators/public.decorator';
 
 @ApiTags('Documents')
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('documents')
 export class DocumentsController {
-  constructor(private readonly documentsService: DocumentsService) {}
+  constructor(private readonly documentsService: DocumentsService) { }
 
+  @Public()
   @Post()
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @HttpCode(HttpStatus.CREATED)
@@ -21,6 +23,7 @@ export class DocumentsController {
     return this.documentsService.create(req.user.id, createDocumentDto, req.user);
   }
 
+  @Public()
   @Get()
   @ApiOperation({ summary: 'List association documents' })
   @ApiResponse({ status: 200, description: 'Return list of documents' })
@@ -28,6 +31,7 @@ export class DocumentsController {
     return this.documentsService.findAll(req.user);
   }
 
+  @Public()
   @Get(':id')
   @ApiOperation({ summary: 'Get document details by ID' })
   @ApiResponse({ status: 200, description: 'Return document details' })
@@ -37,6 +41,7 @@ export class DocumentsController {
     return this.documentsService.findOne(id, req.user);
   }
 
+  @Public()
   @Delete(':id')
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @HttpCode(HttpStatus.OK)

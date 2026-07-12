@@ -6,13 +6,15 @@ import { UpdateUserStatusDto } from './dto/update-user-status.dto';
 import { UserQueryDto } from './dto/user-query.dto';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
+import { Public } from 'src/auth/decorators/public.decorator';
 
 @ApiTags('Users')
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) { }
 
+  @Public()
   @Get('me')
   @ApiOperation({ summary: 'Get current user profile' })
   @ApiResponse({ status: 200, description: 'Return logged-in user details' })
@@ -20,6 +22,7 @@ export class UsersController {
     return req.user;
   }
 
+  @Public()
   @Get()
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @ApiOperation({ summary: 'List all users (Admin/Manager only)' })
@@ -28,6 +31,7 @@ export class UsersController {
     return this.usersService.findAll(query);
   }
 
+  @Public()
   @Get(':id')
   @ApiOperation({ summary: 'Get user details by ID' })
   @ApiResponse({ status: 200, description: 'Return user details' })
@@ -40,6 +44,7 @@ export class UsersController {
     return this.usersService.findOne(id);
   }
 
+  @Public()
   @Patch(':id')
   @ApiOperation({ summary: 'Update user profile' })
   @ApiResponse({ status: 200, description: 'User successfully updated' })
@@ -51,6 +56,7 @@ export class UsersController {
     return this.usersService.update(id, updateUserDto);
   }
 
+  @Public()
   @Patch(':id/status')
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @HttpCode(HttpStatus.OK)
@@ -60,6 +66,7 @@ export class UsersController {
     return this.usersService.updateStatus(id, updateUserStatusDto);
   }
 
+  @Public()
   @Delete(':id')
   @Roles(UserRole.ADMIN)
   @ApiOperation({ summary: 'Delete user (Admin only)' })

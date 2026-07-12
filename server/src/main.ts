@@ -65,7 +65,6 @@ async function bootstrap() {
           bearerFormat: 'JWT',
           description: 'Enter your JWT access token',
         },
-        'JWT-auth',
       )
       .addTag('Authentication', 'Login, register with access code, request a code')
       .addTag('Users', 'User profile management')
@@ -73,9 +72,9 @@ async function bootstrap() {
       .addTag('Access Codes', 'Access code generation and management')
       .addTag('Code Requests', 'New member access code requests')
       .addTag('Correction Requests', 'Profile detail correction requests')
-      .addTag('Documents', 'Document sharing within an association')
-      .addTag('Maintenance Requests', 'Report and manage maintenance issues')
-      .addTag('Notifications', 'In-app notification management')
+      // .addTag('Documents', 'Document sharing within an association')
+      // .addTag('Maintenance Requests', 'Report and manage maintenance issues')
+      // .addTag('Notifications', 'In-app notification management')
       .build();
 
     const document = SwaggerModule.createDocument(app, swaggerConfig);

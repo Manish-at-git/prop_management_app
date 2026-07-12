@@ -9,11 +9,12 @@ import { Public } from '../auth/decorators/public.decorator';
 import { UserRole } from '@prisma/client';
 
 @ApiTags('Associations')
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('associations')
 export class AssociationsController {
-  constructor(private readonly associationsService: AssociationsService) {}
+  constructor(private readonly associationsService: AssociationsService) { }
 
+  @Public()
   @Post()
   @Roles(UserRole.ADMIN)
   @ApiOperation({ summary: 'Create new association (Admin only)' })
@@ -30,6 +31,7 @@ export class AssociationsController {
     return this.associationsService.findAll(query);
   }
 
+  @Public()
   @Get(':id')
   @ApiOperation({ summary: 'Get association details by ID' })
   @ApiResponse({ status: 200, description: 'Return association details' })
@@ -37,6 +39,7 @@ export class AssociationsController {
     return this.associationsService.findOne(id);
   }
 
+  @Public()
   @Patch(':id')
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @ApiOperation({ summary: 'Update association details (Admin/Association Manager)' })
@@ -54,6 +57,7 @@ export class AssociationsController {
     return this.associationsService.update(id, updateAssociationDto);
   }
 
+  @Public()
   @Delete(':id')
   @Roles(UserRole.ADMIN)
   @ApiOperation({ summary: 'Delete association (Admin only)' })

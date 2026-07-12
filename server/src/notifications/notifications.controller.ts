@@ -4,13 +4,15 @@ import { NotificationsService } from './notifications.service';
 import { CreateNotificationDto } from './dto/create-notification.dto';
 import { Roles } from '../auth/decorators/roles.decorator';
 import { UserRole } from '@prisma/client';
+import { Public } from 'src/auth/decorators/public.decorator';
 
 @ApiTags('Notifications')
-@ApiBearerAuth()
+// @ApiBearerAuth()
 @Controller('notifications')
 export class NotificationsController {
-  constructor(private readonly notificationsService: NotificationsService) {}
+  constructor(private readonly notificationsService: NotificationsService) { }
 
+  @Public()
   @Post()
   @Roles(UserRole.ADMIN, UserRole.MANAGER)
   @HttpCode(HttpStatus.CREATED)
@@ -22,6 +24,7 @@ export class NotificationsController {
     return this.notificationsService.create(createNotificationDto, req.user);
   }
 
+  @Public()
   @Get()
   @ApiOperation({ summary: 'Get all notifications for the current user' })
   @ApiResponse({ status: 200, description: 'Return list of notifications' })
@@ -29,6 +32,7 @@ export class NotificationsController {
     return this.notificationsService.findAll(req.user.id);
   }
 
+  @Public()
   @Patch('read-all')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'Mark all notifications as read for the current user' })
@@ -37,6 +41,7 @@ export class NotificationsController {
     return this.notificationsService.markAllAsRead(req.user.id);
   }
 
+  @Public()
   @Patch(':id/read')
   @HttpCode(HttpStatus.OK)
   @ApiOperation({ summary: 'Mark a single notification as read' })
