@@ -12,6 +12,7 @@ COPY . .
 
 RUN npx prisma generate
 RUN npm run build
+RUN echo "=== DIST CONTENT ===" && find /app/dist -maxdepth 5 -type f
 
 # Runner stage
 FROM node:20-bookworm AS runner
