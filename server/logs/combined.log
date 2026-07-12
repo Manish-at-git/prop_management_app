@@ -1,0 +1,418 @@
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T04:12:54.032Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T04:12:54.053Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T04:12:54.053Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T04:12:54.057Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T04:12:54.059Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T04:12:54.063Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T04:12:54.065Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T04:12:54.066Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T04:12:54.066Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T04:12:54.067Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T04:12:54.068Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T04:12:54.068Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T04:12:54.069Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T04:12:54.069Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T04:12:54.069Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T04:12:54.070Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T04:12:54.071Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T04:12:54.072Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T04:12:54.144Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T04:12:54.147Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T04:12:54.147Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T04:12:54.148Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T04:12:54.148Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T04:12:54.149Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T04:12:54.149Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T04:12:54.150Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T04:12:54.150Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T04:12:54.150Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T04:12:54.151Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T04:12:54.151Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T04:12:54.151Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T04:12:54.152Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T04:12:54.152Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T04:12:54.152Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T04:12:54.153Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T04:12:54.153Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T04:12:54.153Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T04:12:54.153Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T04:12:54.154Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T04:12:54.154Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T04:12:54.154Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T04:12:54.155Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T04:12:54.155Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T04:12:54.155Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T04:12:54.155Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T04:12:54.156Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T04:12:54.156Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T04:12:54.156Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T04:12:54.157Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T04:12:54.157Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T04:12:54.157Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T04:12:54.157Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T04:12:54.158Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T04:12:54.158Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T04:12:54.158Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T04:12:54.159Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T04:12:54.159Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T04:12:54.159Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T04:12:54.159Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T04:12:54.160Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T04:12:54.160Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T04:12:54.160Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T04:12:54.160Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T04:12:54.161Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T04:12:54.161Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T04:12:54.161Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T04:12:54.190Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T04:12:54.193Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T04:12:54.193Z"}
+{"context":"HttpExceptionFilter","level":"error","message":"POST /api/access-codes Status: 401 - Error: Unauthorized","stack":["UnauthorizedException: Unauthorized\n    at JwtAuthGuard.handleRequest (D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:60:30)\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:44:124\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:83:24\n    at allFailed (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:110:18)\n    at attempt (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:183:28)\n    at strategy.fail (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:314:9)\n    at JwtStrategy.authenticate (D:\\manish\\dev\\hardik\\server\\node_modules\\passport-jwt\\lib\\strategy.js:96:21)\n    at attempt (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:378:16)\n    at authenticate (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:379:7)\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:88:3"],"timestamp":"2026-07-12T04:25:55.005Z"}
+{"context":"HttpExceptionFilter","level":"error","message":"POST /api/associations Status: 401 - Error: Unauthorized","stack":["UnauthorizedException: Unauthorized\n    at JwtAuthGuard.handleRequest (D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:60:30)\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:44:124\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:83:24\n    at allFailed (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:110:18)\n    at attempt (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:183:28)\n    at strategy.fail (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:314:9)\n    at JwtStrategy.authenticate (D:\\manish\\dev\\hardik\\server\\node_modules\\passport-jwt\\lib\\strategy.js:96:21)\n    at attempt (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:378:16)\n    at authenticate (D:\\manish\\dev\\hardik\\server\\node_modules\\passport\\lib\\middleware\\authenticate.js:379:7)\n    at D:\\manish\\dev\\hardik\\server\\node_modules\\@nestjs\\passport\\dist\\auth.guard.js:88:3"],"timestamp":"2026-07-12T04:26:05.519Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T09:56:57.685Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T09:56:57.707Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T09:56:57.708Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T09:56:57.710Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T09:56:57.711Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T09:56:57.712Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T09:56:57.712Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T09:56:57.712Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T09:56:57.712Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T09:56:57.713Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T09:56:57.713Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T09:56:57.713Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T09:56:57.714Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:56:57.714Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:56:57.714Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T09:56:57.714Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T09:56:57.715Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T09:56:57.716Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T09:56:57.745Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T09:56:57.748Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T09:56:57.749Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T09:56:57.749Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T09:56:57.750Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T09:56:57.750Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T09:56:57.750Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T09:56:57.751Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T09:56:57.751Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T09:56:57.751Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T09:56:57.752Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T09:56:57.752Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T09:56:57.752Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T09:56:57.753Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T09:56:57.753Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T09:56:57.753Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T09:56:57.754Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T09:56:57.754Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T09:56:57.754Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T09:56:57.755Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T09:56:57.755Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T09:56:57.756Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T09:56:57.756Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T09:56:57.756Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T09:56:57.757Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T09:56:57.757Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T09:56:57.757Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T09:56:57.758Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T09:56:57.758Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T09:56:57.758Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T09:56:57.759Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T09:56:57.759Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T09:56:57.759Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T09:56:57.760Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T09:56:57.760Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T09:56:57.760Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T09:56:57.761Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T09:56:57.761Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T09:56:57.761Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T09:56:57.762Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T09:56:57.762Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T09:56:57.762Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T09:56:57.762Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T09:56:57.763Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T09:56:57.763Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T09:56:57.763Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T09:56:57.764Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T09:56:57.764Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T09:56:57.797Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T09:56:57.800Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T09:56:57.800Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T09:59:46.567Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T09:59:46.590Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T09:59:46.591Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T09:59:46.593Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T09:59:46.593Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T09:59:46.594Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T09:59:46.594Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T09:59:46.595Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:46.595Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:46.595Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T09:59:46.596Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T09:59:46.596Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T09:59:46.596Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:46.596Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:46.596Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T09:59:46.597Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T09:59:46.598Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T09:59:46.598Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T09:59:46.628Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T09:59:46.631Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T09:59:46.631Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T09:59:46.631Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T09:59:46.632Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T09:59:46.632Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T09:59:46.633Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T09:59:46.633Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T09:59:46.633Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T09:59:46.634Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:46.635Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T09:59:46.635Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T09:59:46.635Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T09:59:46.636Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T09:59:46.636Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T09:59:46.636Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T09:59:46.637Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T09:59:46.637Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T09:59:46.637Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T09:59:46.637Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T09:59:46.638Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T09:59:46.638Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T09:59:46.638Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T09:59:46.639Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T09:59:46.639Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T09:59:46.639Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T09:59:46.639Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T09:59:46.640Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T09:59:46.640Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T09:59:46.640Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T09:59:46.641Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T09:59:46.641Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:46.641Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T09:59:46.641Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T09:59:46.642Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T09:59:46.642Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T09:59:46.642Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T09:59:46.643Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T09:59:46.643Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T09:59:46.643Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T09:59:46.643Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T09:59:46.644Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T09:59:46.644Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T09:59:46.644Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T09:59:46.645Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T09:59:46.645Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T09:59:46.645Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T09:59:46.645Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T09:59:46.677Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T09:59:46.680Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T09:59:46.680Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T09:59:48.311Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T09:59:48.334Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T09:59:48.334Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T09:59:48.337Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T09:59:48.338Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T09:59:48.338Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T09:59:48.339Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T09:59:48.339Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:48.339Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:48.340Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T09:59:48.340Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T09:59:48.340Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T09:59:48.340Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:48.341Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:48.341Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T09:59:48.341Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T09:59:48.342Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T09:59:48.342Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T09:59:48.371Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T09:59:48.374Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T09:59:48.375Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T09:59:48.375Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T09:59:48.375Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T09:59:48.376Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T09:59:48.376Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T09:59:48.377Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T09:59:48.377Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T09:59:48.377Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:48.378Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T09:59:48.378Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T09:59:48.378Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T09:59:48.379Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T09:59:48.379Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T09:59:48.379Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T09:59:48.380Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T09:59:48.380Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T09:59:48.380Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T09:59:48.380Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T09:59:48.381Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T09:59:48.381Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T09:59:48.381Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T09:59:48.381Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T09:59:48.382Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T09:59:48.382Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T09:59:48.383Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T09:59:48.383Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T09:59:48.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T09:59:48.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T09:59:48.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T09:59:48.385Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:48.385Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T09:59:48.385Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T09:59:48.386Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T09:59:48.386Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T09:59:48.386Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T09:59:48.387Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T09:59:48.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T09:59:48.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T09:59:48.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T09:59:48.388Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T09:59:48.388Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T09:59:48.388Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T09:59:48.388Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T09:59:48.389Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T09:59:48.389Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T09:59:48.389Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T09:59:48.419Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T09:59:48.422Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T09:59:48.422Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T09:59:59.779Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T09:59:59.799Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T09:59:59.800Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T09:59:59.802Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T09:59:59.803Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T09:59:59.804Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T09:59:59.804Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T09:59:59.804Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:59.805Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T09:59:59.805Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T09:59:59.805Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T09:59:59.805Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T09:59:59.806Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:59.806Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T09:59:59.806Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T09:59:59.806Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T09:59:59.808Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T09:59:59.808Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T09:59:59.838Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T09:59:59.841Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T09:59:59.842Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T09:59:59.842Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T09:59:59.843Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T09:59:59.843Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T09:59:59.844Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T09:59:59.844Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T09:59:59.844Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T09:59:59.845Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:59.845Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T09:59:59.846Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T09:59:59.846Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T09:59:59.846Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T09:59:59.846Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T09:59:59.847Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T09:59:59.847Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T09:59:59.847Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T09:59:59.847Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T09:59:59.848Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T09:59:59.848Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T09:59:59.848Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T09:59:59.849Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T09:59:59.849Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T09:59:59.849Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T09:59:59.849Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T09:59:59.850Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T09:59:59.850Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T09:59:59.850Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T09:59:59.851Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T09:59:59.851Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T09:59:59.851Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T09:59:59.852Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T09:59:59.852Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T09:59:59.852Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T09:59:59.853Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T09:59:59.853Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T09:59:59.853Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T09:59:59.853Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T09:59:59.854Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T09:59:59.854Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T09:59:59.854Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T09:59:59.855Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T09:59:59.855Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T09:59:59.855Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T09:59:59.855Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T09:59:59.856Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T09:59:59.856Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T09:59:59.894Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T09:59:59.897Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T09:59:59.897Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","timestamp":"2026-07-12T10:00:27.621Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","timestamp":"2026-07-12T10:00:27.645Z"}
+{"context":"InstanceLoader","level":"info","message":"PassportModule dependencies initialized","timestamp":"2026-07-12T10:00:27.645Z"}
+{"context":"InstanceLoader","level":"info","message":"ThrottlerModule dependencies initialized","timestamp":"2026-07-12T10:00:27.650Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","timestamp":"2026-07-12T10:00:27.651Z"}
+{"context":"InstanceLoader","level":"info","message":"UsersModule dependencies initialized","timestamp":"2026-07-12T10:00:27.653Z"}
+{"context":"InstanceLoader","level":"info","message":"AssociationsModule dependencies initialized","timestamp":"2026-07-12T10:00:27.653Z"}
+{"context":"InstanceLoader","level":"info","message":"AccessCodesModule dependencies initialized","timestamp":"2026-07-12T10:00:27.654Z"}
+{"context":"InstanceLoader","level":"info","message":"CodeRequestsModule dependencies initialized","timestamp":"2026-07-12T10:00:27.654Z"}
+{"context":"InstanceLoader","level":"info","message":"CorrectionRequestsModule dependencies initialized","timestamp":"2026-07-12T10:00:27.654Z"}
+{"context":"InstanceLoader","level":"info","message":"DocumentsModule dependencies initialized","timestamp":"2026-07-12T10:00:27.655Z"}
+{"context":"InstanceLoader","level":"info","message":"MaintenanceModule dependencies initialized","timestamp":"2026-07-12T10:00:27.655Z"}
+{"context":"InstanceLoader","level":"info","message":"NotificationsModule dependencies initialized","timestamp":"2026-07-12T10:00:27.655Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T10:00:27.655Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","timestamp":"2026-07-12T10:00:27.656Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","timestamp":"2026-07-12T10:00:27.656Z"}
+{"context":"InstanceLoader","level":"info","message":"JwtModule dependencies initialized","timestamp":"2026-07-12T10:00:27.657Z"}
+{"context":"InstanceLoader","level":"info","message":"AuthModule dependencies initialized","timestamp":"2026-07-12T10:00:27.657Z"}
+{"context":"RoutesResolver","level":"info","message":"AuthController {/api/auth}:","timestamp":"2026-07-12T10:00:27.701Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/login, POST} route","timestamp":"2026-07-12T10:00:27.704Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/access-code, POST} route","timestamp":"2026-07-12T10:00:27.705Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/create-account, POST} route","timestamp":"2026-07-12T10:00:27.705Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/auth/request-code, POST} route","timestamp":"2026-07-12T10:00:27.706Z"}
+{"context":"RoutesResolver","level":"info","message":"UsersController {/api/users}:","timestamp":"2026-07-12T10:00:27.706Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/me, GET} route","timestamp":"2026-07-12T10:00:27.707Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users, GET} route","timestamp":"2026-07-12T10:00:27.707Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, GET} route","timestamp":"2026-07-12T10:00:27.707Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, PATCH} route","timestamp":"2026-07-12T10:00:27.708Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id/status, PATCH} route","timestamp":"2026-07-12T10:00:27.708Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/users/:id, DELETE} route","timestamp":"2026-07-12T10:00:27.708Z"}
+{"context":"RoutesResolver","level":"info","message":"AssociationsController {/api/associations}:","timestamp":"2026-07-12T10:00:27.709Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, POST} route","timestamp":"2026-07-12T10:00:27.709Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations, GET} route","timestamp":"2026-07-12T10:00:27.709Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, GET} route","timestamp":"2026-07-12T10:00:27.710Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, PATCH} route","timestamp":"2026-07-12T10:00:27.710Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/associations/:id, DELETE} route","timestamp":"2026-07-12T10:00:27.710Z"}
+{"context":"RoutesResolver","level":"info","message":"AccessCodesController {/api/access-codes}:","timestamp":"2026-07-12T10:00:27.711Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, POST} route","timestamp":"2026-07-12T10:00:27.711Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes, GET} route","timestamp":"2026-07-12T10:00:27.711Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, GET} route","timestamp":"2026-07-12T10:00:27.712Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/access-codes/:id, DELETE} route","timestamp":"2026-07-12T10:00:27.712Z"}
+{"context":"RoutesResolver","level":"info","message":"CodeRequestsController {/api/code-requests}:","timestamp":"2026-07-12T10:00:27.712Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests, GET} route","timestamp":"2026-07-12T10:00:27.713Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id, GET} route","timestamp":"2026-07-12T10:00:27.713Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/approve, POST} route","timestamp":"2026-07-12T10:00:27.713Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/code-requests/:id/reject, POST} route","timestamp":"2026-07-12T10:00:27.714Z"}
+{"context":"RoutesResolver","level":"info","message":"CorrectionRequestsController {/api/correction-requests}:","timestamp":"2026-07-12T10:00:27.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, POST} route","timestamp":"2026-07-12T10:00:27.714Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests, GET} route","timestamp":"2026-07-12T10:00:27.715Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id, GET} route","timestamp":"2026-07-12T10:00:27.715Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/correction-requests/:id/status, PATCH} route","timestamp":"2026-07-12T10:00:27.715Z"}
+{"context":"RoutesResolver","level":"info","message":"DocumentsController {/api/documents}:","timestamp":"2026-07-12T10:00:27.716Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, POST} route","timestamp":"2026-07-12T10:00:27.717Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents, GET} route","timestamp":"2026-07-12T10:00:27.717Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, GET} route","timestamp":"2026-07-12T10:00:27.718Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/documents/:id, DELETE} route","timestamp":"2026-07-12T10:00:27.718Z"}
+{"context":"RoutesResolver","level":"info","message":"MaintenanceController {/api/maintenance}:","timestamp":"2026-07-12T10:00:27.718Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, POST} route","timestamp":"2026-07-12T10:00:27.719Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance, GET} route","timestamp":"2026-07-12T10:00:27.719Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, GET} route","timestamp":"2026-07-12T10:00:27.720Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/maintenance/:id, PATCH} route","timestamp":"2026-07-12T10:00:27.720Z"}
+{"context":"RoutesResolver","level":"info","message":"NotificationsController {/api/notifications}:","timestamp":"2026-07-12T10:00:27.721Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, POST} route","timestamp":"2026-07-12T10:00:27.721Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications, GET} route","timestamp":"2026-07-12T10:00:27.722Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/read-all, PATCH} route","timestamp":"2026-07-12T10:00:27.722Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/api/notifications/:id/read, PATCH} route","timestamp":"2026-07-12T10:00:27.723Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","timestamp":"2026-07-12T10:00:27.758Z"}
+{"level":"info","message":"🚀 Application running on: http://localhost:3000/api","timestamp":"2026-07-12T10:00:27.762Z"}
+{"level":"info","message":"📚 Swagger docs available at: http://localhost:3000/api-docs","timestamp":"2026-07-12T10:00:27.762Z"}
+{"context":"HttpExceptionFilter","level":"error","message":"GET /api/access-codes/1 Status: 404 - Error: Access code not found","stack":["NotFoundException: Access code not found\n    at AccessCodesService.findOne (D:\\manish\\dev\\hardik\\server\\src\\access-codes\\access-codes.service.ts:97:13)"],"timestamp":"2026-07-12T10:02:06.547Z"}
+{"context":"HttpExceptionFilter","level":"error","message":"GET /api/access-codes/1 Status: 404 - Error: Access code not found","stack":["NotFoundException: Access code not found\n    at AccessCodesService.findOne (D:\\manish\\dev\\hardik\\server\\src\\access-codes\\access-codes.service.ts:97:13)"],"timestamp":"2026-07-12T10:02:09.974Z"}
