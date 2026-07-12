@@ -21,7 +21,7 @@
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
     "prisma:studio": "prisma studio",
-    "db:seed": "ts-node prisma/seed.ts"
+    "db:seed": "node prisma/seedcopy.js"
   },
   "dependencies": {
     "@nestjs/common": "^10.3.0",
@@ -89,7 +89,6 @@
     "testEnvironment": "node"
   },
   "prisma": {
-    "seed": "ts-node prisma/seed.ts",
-    "seedcopy": "node prisma/seedcopy.js"
+    "seed": "node prisma/seedcopy.js"
   }
 }
