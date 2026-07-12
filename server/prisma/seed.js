@@ -1,5 +1,5 @@
-import { PrismaClient, AssociationStatus, AccessCodeStatus, UserRole, UserStatus } from '@prisma/client';
-import * as bcrypt from 'bcrypt';
+const { PrismaClient, AssociationStatus, AccessCodeStatus, UserRole, UserStatus } = require('@prisma/client');
+const bcrypt = require('bcrypt');
 
 const prisma = new PrismaClient();
 
